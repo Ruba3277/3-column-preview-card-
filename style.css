@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-headings-buttons: hsl(0, 0%, 95%);
+    --bg-card1: hsl(30, 77%, 52%);
+    --bg-card2: hsl(184, 100%, 22%);
+    --bg-card3: hsl(179, 100%, 13%);
+    --paragraph:hsla(0, 0%, 100%, 0.75);
+}
+
+html, body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--background-headings-buttons);
+    height: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    gap: 2rem;
+    overflow-y: auto;
+    padding: clamp(2rem,2vw,3rem) 0rem;
+}
+.card{
+    display: flex;
+    margin-left: clamp(1.5rem,2vw,3rem);
+    margin-right: clamp(1.5rem,2vw,3rem);
+    flex-direction: column;
+    border-radius:clamp(0.5rem,2vw,3rem); 
+    overflow: hidden;
+}
+.card1{
+    background-color: var(--bg-card1);
+    flex: 1;
+    text-align: left;
+    padding: clamp(3rem, 2vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 2vw, 3rem);
+
+}
+.card2{
+    background-color: var(--bg-card2);
+    flex: 1;
+    text-align: left;
+    padding: clamp(3rem, 2vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 2vw, 3rem);
+}
+
+
+.card3{
+    background-color: var(--bg-card3);
+    flex: 1;
+    text-align: left;
+    padding: clamp(3rem, 2vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 2vw, 3rem);
+}
+h1{
+    color: var(--background-headings-buttons);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size:clamp(3rem, 2vw, 3rem);
+}
+p{
+    color: var(--paragraph);
+    
+    font-size:clamp(1.15rem, 2vw, 3rem);
+}
+.card1 {
+    --button-color: var(--bg-card1);
+}
+.card2 {
+    --button-color: var(--bg-card2);
+}
+.card3 {
+    --button-color: var(--bg-card3);
+}
+button{
+    background-color: var(--background-headings-buttons);
+    border: none;
+    border-radius:clamp(2rem, 2vw, 3rem);
+    width: 70%;
+    padding: clamp(1rem, 2vw, 3rem);
+    color: var(--button-color);
+    font-weight: 700;
+}
+/* Desktop customization */
+
+@media screen and (min-width:48rem) {
+    
+    
+   .card{
+    display: flex;
+    flex-direction: row;
+    border-radius:clamp(0.5rem,0.45vw,3rem);
+    width: 50%;  
+    min-width: 600px;
+    margin:0;
+    
+    
+   }
+   h1{
+    font-size: clamp(2rem, 2.5vw, 2.75rem);
+    
+   }
+   p{
+    font-size: clamp(0.9rem, 0.9vw, 2.75rem);;
+    line-height: 1.6;
+    
+   }
+   
+   
+   button{
+    
+    padding: clamp(5px, 3vw, 20px);
+    margin-top: clamp(15px, 2vw, 40px);
+    font-size:clamp(15px, 1vw, 18px);
+    min-width: 140px;
+    
+    
+   } 
+   .card1, .card2, .card3{
+    gap: clamp(1.65rem, 1.65vw, 3rem);
+    padding-right: clamp(2rem, 2vw, 5rem);
+    padding-left:clamp(2rem,3vw,5rem) ;
+    justify-content: space-evenly;
+    
+   }
+   
+}
+   
+
+
+
