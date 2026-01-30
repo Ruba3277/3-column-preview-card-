@@ -117,7 +117,7 @@ button{
    
    button{
     
-    padding: clamp(5px, 3vw, 20px);
+    padding: clamp(3px, 3vw, 20px);
     margin-top: clamp(15px, 2vw, 40px);
     font-size:clamp(15px, 1vw, 18px);
     min-width: 140px;
@@ -134,6 +134,7 @@ button{
    
 }
    
+
 
 
 
